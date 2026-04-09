@@ -1,0 +1,40 @@
+---
+spec_version: 1
+name: cloud-infra-optimizer
+title: Cloud Infrastructure Optimizer
+description: A real-world OpenEnv environment for managing and optimizing cloud infrastructure resources. Includes 3 tasks (easy, medium, hard) with realistic reward functions.
+type: environment
+runtime: docker
+app: server.app:app
+port: 8000
+base_path: /web
+
+# Environment metadata
+tags:
+  - cloud-infrastructure
+  - optimization
+  - reinforcement-learning
+  - real-world
+
+# Task definitions
+tasks:
+  - name: easy
+    description: "Traffic Spike Response: Scale web servers from 2 to 5+ instances to handle a traffic spike while maintaining 99% uptime"
+    difficulty: easy
+    max_steps: 20
+    
+  - name: medium
+    description: "Cost Optimization: Reduce monthly infrastructure cost from $5000 to under $3000 while maintaining 99% uptime and <150ms response time"
+    difficulty: medium
+    max_steps: 30
+    
+  - name: hard
+    description: "Failure Recovery: Restore service from critical failure (load balancer down, 20% uptime) to 99.5% uptime and <200ms response time"
+    difficulty: hard
+    max_steps: 40
+
+# Hugging Face Spaces metadata
+colorFrom: blue
+colorTo: indigo
+emoji: ☁️
+pinned: false
