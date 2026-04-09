@@ -1,3 +1,12 @@
+---
+title: Cloud Infrastructure Optimizer
+emoji: ☁️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 8000
+---
+
 # Cloud Infrastructure Optimizer OpenEnv
 
 A real-world **OpenEnv** environment for managing and optimizing cloud infrastructure resources. This environment simulates realistic cloud infrastructure management scenarios with three progressive tasks: scaling, cost optimization, and failure recovery.
